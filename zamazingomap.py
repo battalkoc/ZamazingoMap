@@ -5,7 +5,10 @@ from PyQt5.QtWidgets import (
     QLabel, QSplitter, QListWidget
 )
 from PyQt5.QtCore import Qt, QThread, pyqtSignal
+import os
+os.system("pip install python-nmap --break-system-packages")
 import nmap
+
 
 
 class NmapWorker(QThread):
